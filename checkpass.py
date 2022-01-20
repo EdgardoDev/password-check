@@ -1,5 +1,6 @@
 import requests
 import hashlib
+import sys
 
 # Function that request data and give a response.
 def api_data_request(character_query):
@@ -14,7 +15,10 @@ def api_data_request(character_query):
 def passwords_crack_count(hashes, hash_checks):
   hashes = (line.split(":") for line in hashes.text.splitlines())
   for h, count in hashes:
-    print(h, count)
+    # Check how many times the password has been hacked.
+    if h == hash_checks:
+      return count
+  return 0
 
 # Function that check the pwned API.
 def check_pwned_api(password):
@@ -23,8 +27,21 @@ def check_pwned_api(password):
   # Store the first 5 characters and then store the remaining chars.
   first_five_chars, remaining_chars = sha_one_password[:5], sha_one_password[5:]
   response = api_data_request(first_five_chars)
-  print(response)
-  
   return passwords_crack_count(response, remaining_chars)
 
-check_pwned_api("123")
+# This function will receive the arguments given by the user.
+def main(args):
+  for password in args:
+    count = check_pwned_api(password)
+    if count:
+      print("-------------------------------------------------------------------------------------------------------------")
+      print(f"The password [ {password} ] was found on internet [ {count} ] times ⚠️  please change your password immediately! 🚨")
+      print("-------------------------------------------------------------------------------------------------------------")
+    else:
+      print("------------------------------------------------------------------------------------")
+      print(f"The password [ {password} ] was not found on internet! ✅ you can use it safely! 👍")
+      print("------------------------------------------------------------------------------------")
+  return "done!"
+      
+# Lastly we call the main function that accepst any number of arguments.
+main(sys.argv[1:])
