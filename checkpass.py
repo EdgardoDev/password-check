@@ -41,7 +41,10 @@ def main(args):
       print("------------------------------------------------------------------------------------")
       print(f"The password [ {password} ] was not found on internet! ✅ you can use it safely! 👍")
       print("------------------------------------------------------------------------------------")
-  return "done!"
-      
-# Lastly we call the main function that accepst any number of arguments.
-main(sys.argv[1:])
+  return " Done! 🔐"
+
+# Only run this file if it's the main file been run from the command line.
+if __name__ == "__main__":
+  # Lastly we call the main function that accepst any number of arguments.
+  # Exit the process in case was not exited successfully.
+  sys.exit(main(sys.argv[1:]))
