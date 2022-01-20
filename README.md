@@ -56,6 +56,8 @@ Password checker made with Python.
 The following modules were used in this project:
 
 - [requests](https://pypi.org/project/requests/)
+- [hashlib](https://pypi.org/search/?q=hashlib)
+- [sys](https://pypi.org/search/?q=sys&o=)
 
 ## :white_check_mark: Requirements ##
 
