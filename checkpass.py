@@ -10,10 +10,21 @@ def api_data_request(character_query):
     raise RuntimeError(f"Error fetching: {res.status_code}, please check the API and try again!")
   return res
 
+# Function that read the response data.
+def passwords_crack_count(hashes, hash_checks):
+  hashes = (line.split(":") for line in hashes.text.splitlines())
+  for h, count in hashes:
+    print(h, count)
+
 # Function that check the pwned API.
 def check_pwned_api(password):
   # Hash the password.
-  sha1password = hashlib.sha1(password.encode("utf-8")).hexdigest().upper()
-  return sha1password
+  sha_one_password = hashlib.sha1(password.encode("utf-8")).hexdigest().upper()
+  # Store the first 5 characters and then store the remaining chars.
+  first_five_chars, remaining_chars = sha_one_password[:5], sha_one_password[5:]
+  response = api_data_request(first_five_chars)
+  print(response)
+  
+  return passwords_crack_count(response, remaining_chars)
 
 check_pwned_api("123")
