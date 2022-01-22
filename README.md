@@ -1,7 +1,5 @@
 <div align="center" id="top"> 
-  &#xa0;
-
-  <!-- <a href="https://passwordcheck.netlify.app">Demo</a> -->
+<img src="https://github.com/EdgardoDev/MyFiles/blob/main/Python.svg.png?raw=true" alt="Python Logo" height="200" width="200"/>
 </div>
 
 <h1 align="center">Password Checker</h1>
