@@ -1,32 +1,20 @@
 <div align="center" id="top"> 
-<img src="https://github.com/EdgardoDev/MyFiles/blob/main/Python.svg.png?raw=true" alt="Python Logo" height="200" width="200"/>
+  <img src="https://github.com/EdgardoDev/MyFiles/blob/main/Python.svg.png?raw=true" alt="Python Logo" height="200" width="200"/>"
 </div>
 
-<h1 align="center">Password Checker</h1>
+<h1 align="center">Password Check</h1>
 
 <p align="center">
-  <img alt="Github top language" src="https://img.shields.io/github/languages/top/EdgardoDev/password-check?color=1976D2">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/EdgardoDev/password-check?logo=python&logoColor=%23fff&style=for-the-badge&color=066da5">
 
-  <img alt="Github language count" src="https://img.shields.io/github/languages/count/EdgardoDev/password-check?color=1976D2">
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/EdgardoDev/password-check?logo=python&logoColor=%23fff&style=for-the-badge&color=066da5">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/EdgardoDev/password-check?color=1976D2">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/EdgardoDev/password-check?logo=github&logoColor=%23fff&style=for-the-badge&color=066da5">
 
-  <img alt="License" src="https://img.shields.io/github/license/EdgardoDev/password-check?color=1976D2">
-
-  <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/{{YOUR_GITHUB_USERNAME}}/password-check?color=56BEB8" /> -->
-
-  <!-- <img alt="Github forks" src="https://img.shields.io/github/forks/{{YOUR_GITHUB_USERNAME}}/password-check?color=56BEB8" /> -->
-
-  <!-- <img alt="Github stars" src="https://img.shields.io/github/stars/{{YOUR_GITHUB_USERNAME}}/password-check?color=56BEB8" /> -->
+  <img alt="License" src="https://img.shields.io/github/license/EdgardoDev/password-check?logo=github&style=for-the-badge&color=066da5">
 </p>
 
-<!-- Status -->
-
-<!-- <h4 align="center"> 
-	🚧  Password Check 🚀 Under construction...  🚧
-</h4> 
-
-<hr> -->
+<hr>
 
 <p align="center">
   <a href="#dart-about">About</a> &#xa0; | &#xa0; 
@@ -48,14 +36,13 @@ Password checker made with Python.
 
 :heavy_check_mark: Check if a password has been used online.
 
-
 ## :rocket: Modules ##
 
 The following modules were used in this project:
 
-- [requests](https://pypi.org/project/requests/)
-- [hashlib](https://pypi.org/search/?q=hashlib)
-- [sys](https://pypi.org/search/?q=sys&o=)
+- [requests]()
+- [hashlib]()
+- [sys]()
 
 ## :white_check_mark: Requirements ##
 
