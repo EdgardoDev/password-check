@@ -1,5 +1,5 @@
 <div align="center" id="top"> 
-  <img src="https://github.com/EdgardoDev/MyFiles/blob/main/Python.svg.png?raw=true" alt="Python Logo" height="200" width="200"/>"
+  <img src="https://github.com/EdgardoDev/MyFiles/blob/main/Python.svg.png?raw=true" alt="Python Logo" height="200" width="200"/>
 </div>
 
 <h1 align="center">Password Check</h1>
@@ -13,8 +13,6 @@
 
   <img alt="License" src="https://img.shields.io/github/license/EdgardoDev/password-check?logo=github&style=for-the-badge&color=066da5">
 </p>
-
-<hr>
 
 <p align="center">
   <a href="#dart-about">About</a> &#xa0; | &#xa0; 
